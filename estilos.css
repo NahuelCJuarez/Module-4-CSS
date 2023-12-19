@@ -1,0 +1,159 @@
+header {
+    background-color: rgb(12, 12, 12);
+}
+
+body {
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+p, h1, h2, h3, h4, h5, h6 {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.pokebolas {
+    width: 45px; 
+    height: 45px;
+    margin: 0 10px; 
+}
+
+#tituloprincipal {
+    color: aliceblue; 
+}
+
+#tarjetas {
+    height: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.pkm {
+    width: 85vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 1em;
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.pokemon {
+    width: 22vw; 
+    height: auto; 
+    color: rgb(2, 2, 2);
+    margin: 0 10px;
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  #charmander {
+    background-image: url('./img/charmander.jpg');
+  }
+  
+  #charmander:hover {
+    animation: cambioImagenCharmander 2s forwards;
+  }
+  
+  @keyframes cambioImagenCharmander {
+    0% {
+      background-image: url(./img/charmander.jpg);
+    }
+    50% {
+      background-image: url(./img/charmeleon.jpg);
+    }
+    100% {
+      background-image: url(./img/charizard.jpg);
+    }
+  }
+
+  #squirtle {
+    background-image: url(./img/squirtle.jpg);
+  }
+
+  #squirtle:hover {
+    animation: cambioImagenSquirtle 2s forwards;
+  }
+
+  @keyframes cambioImagenSquirtle {
+    0% {
+        background-image: url(./img/squirtle.jpg);
+    }
+    50% {
+        background-image: url(./img/wartortle.jpg);
+    }
+    100% {
+        background-image: url(./img/blastoise.jpg);
+    }    
+  }
+
+  #bulbasaur {
+    background-image: url(./img/bulbasaur.jpg);
+  }
+
+  #bulbasaur:hover {
+    animation: cambioImagenBulbasaur 2s forwards;
+  }
+
+  @keyframes cambioImagenBulbasaur {
+    0% {
+        background-image: url(./img/bulbasaur.jpg);
+    }
+    50% {
+        background-image: url(./img/ivysaur.jpg);
+    }
+    100% {
+        background-image: url(./img/venusaur.jpg);
+    }
+  }
+
+.carta {
+    padding: 1em;
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 5%;
+    
+}
+
+#segundotitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.footerlinks {
+    background-color: black;
+    color: white;
+    margin-top: 2em;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tei {
+    display: flex;
+}
+
+.texto {
+    flex: 1;
+}
+
+.hms {
+    margin-left: auto;
+}
+
